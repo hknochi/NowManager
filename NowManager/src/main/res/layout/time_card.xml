@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp"
+    tools:context=".Main"
+    android:background="#eeeeee">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:background="#ffffff"
+        android:id="@+id/timeCardFragmentLayout"
+        android:longClickable="true">
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/eventNameInput"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:hint="Untitled Event"
+            android:background="@android:color/transparent"
+            android:gravity="center|center_horizontal|left" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/eventNameInput"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"
+            android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignBottom="@+id/eventNameInput"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="M-D AM/PM"
+            android:layout_gravity="center"
+            android:id="@+id/dateText"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignRight="@+id/timeOfDayText"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00:00:00"
+            android:layout_gravity="center"
+            android:id="@+id/timeText"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textView"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/newTimeFragment"
+        android:title="Add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/addnew"/>
+
+    <item
+        android:id="@+id/goTop"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Recent Events"/>
+
+    <item
+        android:id="@+id/deleteAll"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Clear All"/>
+
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Settings"
+        android:icon="@drawable/settings">
+
+    </item>
+
+</menu>

@@ -1,0 +1,49 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+    <PreferenceCategory android:title="Features">
+
+        <CheckBoxPreference
+            android:title="Count Up Mode"
+            android:defaultValue="false"
+            android:summary="Labels number of events"
+            android:key="COUNT_UP_MODE" />
+
+
+    </PreferenceCategory>
+
+<!--    <PreferenceCategory android:title="Formats">
+
+        <ListPreference
+            android:title="Date Format"
+            android:summary="Date display format for logged events"
+            android:key="DATE_FORMAT"
+            android:icon="@drawable/info"/>
+            &lt;!&ndash;android:entries="@array/settings_push_delay_human_value"
+            android:entryValues="@array/settings_push_delay_phone_value"
+            android:defaultValue="????"&ndash;&gt;
+
+        <ListPreference
+            android:title="Time Format"
+            android:summary="Time display format for logged events"
+            android:key="TIME_FORMAT"
+            android:icon="@drawable/info"/>
+        &lt;!&ndash;android:entries="@array/settings_push_delay_human_value"
+        android:entryValues="@array/settings_push_delay_phone_value"
+        android:defaultValue="????"&ndash;&gt;
+
+    </PreferenceCategory>-->
+
+    <PreferenceCategory android:title="About">
+
+        <Preference android:title="Version 1.0"
+            android:summary="Tap to rate this version on the Google Play Store. All feedback is appreciated."
+            android:icon="@drawable/nowmanagericon">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://play.google.com/store/apps/details?id=com.collinguarino.nowmanager" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
